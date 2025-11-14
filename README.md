@@ -88,6 +88,9 @@ portfolio-v2/
 │   ├── ui/
 │   │   ├── button.tsx        # Button component
 │   │   └── card.tsx          # Card component
+│   ├── vaulted/              # Unused components (preserved)
+│   │   ├── workspace-section.tsx  # Workspaces section (vaulted)
+│   │   └── README.md         # Vaulted components guide
 │   ├── glance-section.tsx    # Quick preview cards
 │   ├── hero-section.tsx      # Profile hero section
 │   ├── links-section.tsx     # Social links grid
@@ -95,8 +98,7 @@ portfolio-v2/
 │   ├── projects-section.tsx  # Featured projects
 │   ├── schedule-section.tsx  # Contact/meeting section
 │   ├── theme-provider.tsx    # Theme context provider
-│   ├── theme-toggle.tsx      # Theme toggle component
-│   └── workspace-section.tsx # Workspaces section
+│   └── theme-toggle.tsx      # Theme toggle component
 ├── lib/
 │   ├── blog-data.ts          # Blog posts data
 │   ├── constants.ts          # Profile and content data
@@ -265,6 +267,32 @@ npm run start        # Start production server
 npm run lint         # Run ESLint
 ```
 
+## 🗄️ Vaulted Features
+
+Some features are preserved but not currently active. They can be easily restored when needed.
+
+### Workspaces Section
+**Status**: Currently hidden  
+**Location**: `components/vaulted/workspace-section.tsx`
+
+A section that organizes content into categorized workspaces (Projects, Blog, Certificates). Inspired by Zen Browser's workspace feature.
+
+**To Restore:**
+1. Open `app/page.tsx`
+2. Uncomment the import:
+   ```typescript
+   import { WorkspaceSection } from "@/components/vaulted/workspace-section"
+   ```
+3. Uncomment the component:
+   ```tsx
+   <WorkspaceSection />
+   ```
+4. Place it where you want it in the page layout
+
+**Why vaulted?** Simplified the home page layout while keeping the feature available for future use.
+
+See `components/vaulted/README.md` for more details on vaulted components.
+
 ## 🎯 Key Design Decisions
 
 1. **Monochrome Palette**: Single color (#f2f0e3) for a calm, professional look
@@ -272,6 +300,7 @@ npm run lint         # Run ESLint
 3. **Compact Lists**: Efficient use of space in stack and blog pages
 4. **Orange Accents**: Highlighted "Platform Engineer" title for visual interest
 5. **Mobile-First**: Responsive breakpoints ensure great experience on all devices
+6. **Modular Sections**: Easy to show/hide sections by commenting out components
 
 ## 📄 License
 

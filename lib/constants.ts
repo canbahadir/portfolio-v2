@@ -145,8 +145,8 @@ export const workspaces: Workspace[] = [
 export const glanceItems: GlanceItem[] = [
   {
     title: 'Latest Blog Post',
-    description: 'Getting Started with GCP Infrastructure',
-    url: 'https://bahadircan.com/blog/gcp-infrastructure',
+    description: 'How to Use GitHub Repositories Securely?',
+    url: 'https://medium.com/@bahadircan/how-to-use-github-repositories-securely-38b951129b4c',
     date: '2024-01-15',
     type: 'blog'
   },

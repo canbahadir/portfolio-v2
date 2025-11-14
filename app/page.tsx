@@ -2,7 +2,7 @@ import { HeroSection } from "@/components/hero-section"
 import { LinksSection } from "@/components/links-section"
 import { ProjectsSection } from "@/components/projects-section"
 import { ScheduleSection } from "@/components/schedule-section"
-import { WorkspaceSection } from "@/components/workspace-section"
+// import { WorkspaceSection } from "@/components/vaulted/workspace-section"
 import { GlanceSection } from "@/components/glance-section"
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
       <ScheduleSection />
       <LinksSection />
       <ProjectsSection />
-      <WorkspaceSection />
+      {/* <WorkspaceSection /> */}
       <GlanceSection />
 
       <footer className="py-section mt-section-lg">

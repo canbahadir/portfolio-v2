@@ -10,7 +10,7 @@ export function ScheduleSection() {
             Schedule a Meeting
           </h2>
           <p className="text-muted-foreground">
-            Let's connect and discuss how we can work together
+            Let&apos;s connect and discuss how we can work together
           </p>
           <Button size="lg" asChild>
             <a

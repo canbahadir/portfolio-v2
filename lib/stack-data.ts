@@ -84,7 +84,7 @@ export const softwareStack: StackItem[] = [
   {
     name: 'Mojo',
     description: 'Animated story editor for social media',
-    url: 'https://www.mojo.so/',
+    url: 'https://mojo-app.com/',
     category: 'software'
   },
   {
